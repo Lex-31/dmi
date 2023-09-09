@@ -371,6 +371,11 @@ a {
   background-color: transparent;
 }
 
+/*$accent: #237723;*/
+:root {
+  --accent-color: #70b018;
+}
+
 /*@font-face {
   font-family: "Inter";
   font-weight: 400;
@@ -418,7 +423,7 @@ body {
   line-height: 10px;
   cursor: pointer;
   padding-right: 30px;
-  border-bottom: 8px solid #237723;
+  border-bottom: 8px solid var(--accent-color);
 }
 
 .menu {
@@ -439,7 +444,7 @@ body {
   transition: background-color 0.3s;
 }
 .menu__list-link:hover {
-  background-color: #237723;
+  background-color: var(--accent-color);
 }
 
 .menu-btn {
@@ -497,7 +502,7 @@ body {
   z-index: 1;
   display: inline-block;
   padding: 14px 40px;
-  background-color: #237723;
+  background-color: var(--accent-color);
   color: #ffffff;
   text-transform: uppercase;
   cursor: pointer;
@@ -543,7 +548,7 @@ body {
 }
 .featured-right__video::before {
   content: "";
-  background-color: #237723;
+  background-color: var(--accent-color);
   position: absolute;
   top: 90px;
   left: -140px;
@@ -607,7 +612,7 @@ body {
   font-size: 60px;
   line-height: 39px;
   padding-bottom: 20px;
-  color: #237723;
+  color: var(--accent-color);
 }
 .featured-bottom__text {
   margin: 0 auto;
@@ -640,7 +645,7 @@ body {
 .photo-section::before {
   content: "";
   position: absolute;
-  background-color: #237723;
+  background-color: var(--accent-color);
   height: 420px;
   width: 450px;
   top: 50px;
@@ -735,8 +740,8 @@ body {
   margin-left: -38px;
   margin-bottom: 40px;
   padding: 10px;
-  border-right: solid 1px #237723;
-  border-bottom: solid 1px #237723;
+  border-right: solid 1px var(--accent-color);
+  border-bottom: solid 1px var(--accent-color);
   display: block;
   background-color: #ffffff;
   -webkit-transition: all 0.5s;
@@ -874,7 +879,7 @@ body {
   display: none;
 }
 .calc-bmi__radio:checked + .calc-bmi__span {
-  background-color: #237723;
+  background-color: var(--accent-color);
 }
 .calc-bmi__radio:checked + .calc-bmi__span:hover {
   background-color: #deff4b;
@@ -884,7 +889,7 @@ body {
   width: 100%;
   height: 100%;
   padding: 15px;
-  border: solid 1px #237723;
+  border: solid 1px var(--accent-color);
   text-align: center;
   cursor: pointer;
 }
@@ -984,7 +989,7 @@ body {
   transition: background-color 0.5s;
 }
 .calc-bmi__btn:hover {
-  background-color: #237723;
+  background-color: var(--accent-color);
 }
 
 .result {
@@ -1195,7 +1200,7 @@ body {
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #237723;
+  background-color: var(--accent-color);
 }
 
 .swiper-button-prev,
@@ -1212,7 +1217,7 @@ body {
 
 .swiper-button-prev:hover,
 .swiper-button-next:hover {
-  color: #237723;
+  color: var(--accent-color);
 }
 
 .swiper-button-prev {
@@ -1330,8 +1335,8 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   color: #ffffff;
-  background-color: #237723;
-  border: solid 1px #237723;
+  background-color: var(--accent-color);
+  border: solid 1px var(--accent-color);
   padding: 14px 40px;
   cursor: pointer;
   -webkit-transition: background-color 0.5s;
@@ -1365,7 +1370,7 @@ body {
 }
 .footer-title__checkbox:checked + .footer-title__span::before {
   border: none;
-  color: #237723;
+  color: var(--accent-color);
   vertical-align: top;
 }
 
@@ -1421,10 +1426,10 @@ body {
   transition: fill 0.3s;
 }
 .social-icons a:hover {
-  border-color: #237723;
+  border-color: var(--accent-color);
 }
 .social-icons a:hover path {
-  fill: #237723;
+  fill: var(--accent-color);
 }
 
 .footer-menu__row-2 h5,
@@ -1457,7 +1462,7 @@ body {
   cursor: pointer;
 }
 .footer-menu__list a:hover {
-  color: #237723;
+  color: var(--accent-color);
 }
 
 .footer-menu__contacts {
@@ -1479,7 +1484,7 @@ body {
   align-items: center;
   width: 30px;
   height: 30px;
-  background-color: #237723;
+  background-color: var(--accent-color);
   margin-right: 20px;
   padding: 5px;
 }
@@ -1543,7 +1548,7 @@ body {
   content: "";
   height: 290px;
   width: 840px;
-  background-color: #237723;
+  background-color: #70b018;
   position: absolute;
   bottom: 0;
   left: 10px;
@@ -1653,7 +1658,7 @@ ul.crumbs span::before {
 .progress__list h4::before {
   content: "";
   display: block;
-  background-color: #237723;
+  background-color: #70b018;
   width: 12px;
   height: 12px;
   border-bottom: solid 3px #000000;
@@ -1674,7 +1679,7 @@ ul.crumbs span::before {
   font-size: 50px;
   line-height: 60px;
   font-weight: 700;
-  color: #237723;
+  color: #70b018;
   padding-right: 20px;
 }
 .progress__card-white h3, .progress__card-transparent h3 {
@@ -1728,14 +1733,14 @@ ul.crumbs span::before {
 .story__years span {
   font-size: 36px;
   font-weight: 700;
-  color: #237723;
+  color: #70b018;
   padding-right: 15px;
   position: relative;
 }
 .story__years span::before {
   content: "";
   position: absolute;
-  background-color: #237723;
+  background-color: #70b018;
   width: 25px;
   height: 25px;
   border: solid 5px #ffffff;
@@ -1746,7 +1751,7 @@ ul.crumbs span::before {
 .story__years span::after {
   content: "";
   position: absolute;
-  border-bottom: 1px solid #237723;
+  border-bottom: 1px solid #70b018;
   padding-right: 50px;
   left: -55px;
   top: 50%;
@@ -1842,7 +1847,7 @@ ul.crumbs span::before {
 .blog-item__photo span {
   display: inline-block;
   font-size: 14px;
-  border: solid 1px #237723;
+  border: solid 1px #70b018;
   background-color: #000000;
   color: #ffffff;
   padding: 10px 20px;
@@ -1865,7 +1870,7 @@ ul.crumbs span::before {
   transition: color 0.3s;
 }
 .blog-item__content h3 a:hover {
-  color: #237723;
+  color: #70b018;
 }
 .blog-item__content p {
   line-height: 28px;
@@ -1947,7 +1952,7 @@ ul.crumbs span::before {
 }
 .blog-article__meta a {
   display: inline-block;
-  border: solid 1px #237723;
+  border: solid 1px #70b018;
   background-color: #000000;
   color: #ffffff;
   padding: 10px 20px;
@@ -1984,7 +1989,7 @@ ul.crumbs span::before {
 }
 .blog-author__img::after {
   content: "";
-  background-color: #237723;
+  background-color: #70b018;
   height: 200px;
   width: 200px;
   position: absolute;
@@ -2106,7 +2111,7 @@ ul.crumbs span::before {
   font-size: 150px;
   font-weight: 800;
   line-height: 225px;
-  color: #237723;
+  color: #70b018;
   z-index: -1;
   position: absolute;
   left: 50px;
@@ -2127,7 +2132,7 @@ ul.crumbs span::before {
 }
 .error__img::after {
   content: "";
-  background-color: #237723;
+  background-color: #70b018;
   width: 540px;
   height: 500px;
   z-index: -1;
@@ -2315,7 +2320,7 @@ ul.crumbs span::before {
     height: 30px;
     border: solid 3px #ffffff;
     border-radius: 50%;
-    background-color: #237723;
+    background-color: var(--accent-color);
     visibility: visible;
     cursor: pointer;
     margin: 0 auto;
