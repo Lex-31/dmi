@@ -1147,43 +1147,6 @@ a {
   background-color: transparent;
 }
 
-/*$accent: #237723;*/
-.card p {
-  font-family: "OpenSans-Light", sans-serif;
-  font-weight: 300;
-}
-
-.footer-menu__row-2 h5,
-.footer-menu__row-3 h5, body {
-  font-family: "OpenSans-Regular", sans-serif;
-  font-weight: 400;
-}
-
-.slide__quote, .featured-right__quote {
-  font-family: "OpenSans-Italic", sans-serif;
-  font-weight: 400;
-}
-
-.footer-title__form button, .person-info h5, .post__date, .post__next, .calc-bmi__btn, .program-icon, .button {
-  font-family: "OpenSans-Medium", sans-serif;
-  font-weight: 500;
-}
-
-.header {
-  font-family: "OpenSans-SemiBold", sans-serif;
-  font-weight: 600;
-}
-
-.ready__content h6, .post__title, .card__title, .featured-bottom__number, .featured-right__title {
-  font-family: "OpenSans-Bold", sans-serif;
-  font-weight: 700;
-}
-
-.ready__content h2, .feedback__title, .blog__title, .calculator__title, .program__title h2, .benefit__title, .about-info h2, .featured-left__title {
-  font-family: "OpenSans-ExtraBold", sans-serif;
-  font-weight: 800;
-}
-
 @font-face {
   font-family: "OpenSans-Light";
   font-weight: 300;
@@ -1233,6 +1196,43 @@ a {
   font-display: swap;
   src: local("OpenSans-ExtraBold"), url("../fonts/OpenSans-ExtraBold.woff2") format("woff2"), url("../fonts/OpenSans-ExtraBold.woff") format("woff");
 }
+/*$accent: #237723;*/
+.card p {
+  font-family: "OpenSans-Light", sans-serif;
+  font-weight: 300;
+}
+
+.footer-menu__row-2 h5,
+.footer-menu__row-3 h5, body {
+  font-family: "OpenSans-Regular", sans-serif;
+  font-weight: 400;
+}
+
+.slide__quote, .featured-right__quote {
+  font-family: "OpenSans-Italic", sans-serif;
+  font-weight: 400;
+}
+
+.footer-title__form button, .person-info h5, .post__date, .post__next, .calc-bmi__btn, .program-icon, .button {
+  font-family: "OpenSans-Medium", sans-serif;
+  font-weight: 500;
+}
+
+.header {
+  font-family: "OpenSans-SemiBold", sans-serif;
+  font-weight: 600;
+}
+
+.ready__content h6, .post__title, .card__title, .featured-bottom__number, .featured-right__title {
+  font-family: "OpenSans-Bold", sans-serif;
+  font-weight: 700;
+}
+
+.ready__content h2, .feedback__title, .blog__title, .calculator__title, .program__title h2, .benefit__title, .about-info h2, .featured-left__title {
+  font-family: "OpenSans-ExtraBold", sans-serif;
+  font-weight: 800;
+}
+
 :root {
   --accent-color: #70b018;
 }
