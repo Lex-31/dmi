@@ -1683,11 +1683,16 @@ body {
   font-size: 24px;
   line-height: 34px;
   margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 20px;
 }
 .program-icon img {
-  border: solid 1px white;
-  padding: 15px;
-  border-radius: 15px;
+  padding: 5px;
 }
 
 .calculator {
@@ -3077,6 +3082,11 @@ ul.crumbs span::before {
   .benefit__title {
     width: auto;
   }
+  .program-icon {
+    font-size: 18px;
+    line-height: 30px;
+    gap: 10px;
+  }
   .card {
     width: 390px;
   }
@@ -3217,6 +3227,12 @@ ul.crumbs span::before {
     background-size: contain;
     border: none;
     border-radius: 0;
+    cursor: pointer;
+    pointer-events: all;
+  }
+  .program-icon h4 {
+    cursor: pointer;
+    pointer-events: all;
   }
   .program-left {
     width: 100%;
