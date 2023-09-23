@@ -51,7 +51,7 @@
         <div class="featured-left">
           <h1 class="featured-left__title">ЭКСПЕРТ ПО ЗОЖ</h1>
           <p class="featured-left__text">Эксперт с уникальными компетенциями в области здоровья, питания и фитнеса.</p>
-          <a class="button" href="#">ПРИСОЕДИНИТЬСЯ СЕЙЧАС</a>
+          <a class="button" href="#my-form">ПРИСОЕДИНИТЬСЯ СЕЙЧАС</a>
           <img class="featured-left__girl" src="images/girl.png" alt="Img Girl">
         </div>
 
@@ -147,7 +147,7 @@
         <div class="program-left">
           <div class="program__title">
             <h2>МОЙ ПОДХОД</h2>
-            <a class="button" href="#">ПРИСОЕДИНИТЬСЯ</a>
+            <a class="button" href="#my-form">ПРИСОЕДИНИТЬСЯ</a>
           </div>
           <div class="program__item" data-top="880">
             <div class="program-icon">
@@ -445,7 +445,7 @@
           <p>Изменить себя - легко!<br>Если рядом с тобой, тот самый комплексный специалист.?</p>
           <h6>Можете быть уверены, скучать Вам будет некогда!</h6>
           <p>Стоимость участия в программе 5000р/неделя!</p>
-          <a class="button" href="#">ПРИСОЕДИНИТЬСЯ СЕЙЧАС</a>
+          <a class="button" href="#my-form">ПРИСОЕДИНИТЬСЯ СЕЙЧАС</a>
         </div>
       </div>
     </div>
@@ -457,7 +457,7 @@
 
   <div class="container">
 
-    <div class="footer-title">
+    <div class="footer-title" id="my-form">
 
       <h3>ПОДПИСАТЬСЯ НА РАССЫЛКУ</h3>
 
@@ -467,17 +467,17 @@
 
         ли это?</p>
 
-      <form class="footer-title__form" method="POST" action="https://formspree.io/f/xeqbrpdn">
+      <form class="footer-title__form" id="form" method="POST" action="https://formspree.io/f/xeqbrpdn">
 
         <input type="text" name="name" placeholder="Ваше имя">
 
         <input type="email" name="email" placeholder="Ваш Email">
 
-        <button type="submit">ПОДПИСАТЬСЯ</button>
+        <button id="submitButton" type="submit" disabled>ПОДПИСАТЬСЯ</button>
 
         <label for="subscribe">
 
-          <input class="footer-title__checkbox" type="checkbox" name="" id="subscribe">
+          <input class="footer-title__checkbox" type="checkbox" id="subscribe">
 
           <span class="footer-title__span">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих
 

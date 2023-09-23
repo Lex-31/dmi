@@ -126,7 +126,7 @@
 
   <div class="container">
 
-    <div class="footer-title">
+    <div class="footer-title" id="my-form">
 
       <h3>ПОДПИСАТЬСЯ НА РАССЫЛКУ</h3>
 
@@ -136,17 +136,17 @@
 
         ли это?</p>
 
-      <form class="footer-title__form" netlify>
+      <form class="footer-title__form" id="form" method="POST" action="https://formspree.io/f/xeqbrpdn">
 
         <input type="text" name="name" placeholder="Ваше имя">
 
         <input type="email" name="email" placeholder="Ваш Email">
 
-        <button>ПОДПИСАТЬСЯ</button>
+        <button id="submitButton" type="submit" disabled>ПОДПИСАТЬСЯ</button>
 
         <label for="subscribe">
 
-          <input class="footer-title__checkbox" type="checkbox" name="" id="subscribe">
+          <input class="footer-title__checkbox" type="checkbox" id="subscribe">
 
           <span class="footer-title__span">Нажимая кнопку «Отправить», я даю свое согласие на обработку моих
 
