@@ -1213,7 +1213,7 @@ a {
   font-weight: 400;
 }
 
-.footer-title__form button, .person-info h5, .post__date, .post__next, .calc-bmi__btn, .program-icon, .button {
+.footer-title button, .person-info h5, .post__date, .post__next, .calc-bmi__btn, .program-icon, .button {
   font-family: "OpenSans-Medium", sans-serif;
   font-weight: 500;
 }
@@ -2216,7 +2216,7 @@ body {
   color: #000000;
   opacity: 0.6;
 }
-.footer-title__form button {
+.footer-title button {
   text-transform: uppercase;
   color: #ffffff;
   background-color: var(--accent-color);
@@ -2226,7 +2226,7 @@ body {
   -webkit-transition: background-color 0.5s;
   transition: background-color 0.5s;
 }
-.footer-title__form button:hover {
+.footer-title button:hover {
   background-color: #000000;
 }
 .footer-title__checkbox {
@@ -2256,6 +2256,38 @@ body {
   border: none;
   color: var(--accent-color);
   vertical-align: top;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  overflow: auto;
+}
+.modal p {
+  width: 100%;
+}
+.modal button {
+  margin-right: 20px;
+}
+
+.modal-content {
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 50px auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 90%;
+  text-align: center;
+  overflow-y: auto;
+}
+
+.modal-open {
+  overflow: hidden;
 }
 
 .footer-menu {
@@ -2399,12 +2431,12 @@ body {
 
 .about-my {
   margin-top: 20px;
-  margin-bottom: 100px;
   overflow: hidden;
 }
 .about-my__inner {
   display: flex;
   align-items: center;
+  margin-bottom: 100px;
 }
 .about-my__content {
   width: 50%;
@@ -2433,8 +2465,8 @@ body {
   width: 840px;
   background-color: #70b018;
   position: absolute;
-  bottom: 0;
-  left: 10px;
+  bottom: -20px;
+  left: 50px;
   z-index: -1;
 }
 .about-my__photo-one {
@@ -2482,10 +2514,17 @@ ul.crumbs span::before {
   margin-bottom: 100px;
 }
 .experience__video {
-  width: 60%;
+  width: 50%;
+}
+.experience__video .featured-right__video-inner {
+  margin-left: 0;
+}
+.experience__video video {
+  width: auto;
+  height: 90vh;
 }
 .experience__content {
-  width: 40%;
+  width: 50%;
   padding: 30px 0;
 }
 .experience__content h2 {
@@ -2497,17 +2536,20 @@ ul.crumbs span::before {
   background-color: #ffffff;
   border: 35px solid #ffffff;
   width: 100%;
-  margin-left: -60px;
   margin-bottom: 30px;
 }
 .experience__content p {
   line-height: 28px;
   color: #4c4c4c;
-  margin-left: 70px;
+  margin-left: 50px;
   margin-bottom: 40px;
 }
 .experience__content a {
-  margin-left: 70px;
+  margin-left: 50px;
+}
+
+.about-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .progress {
@@ -2587,6 +2629,7 @@ ul.crumbs span::before {
   width: 100%;
   height: 1600px;
   object-fit: cover;
+  object-position: right;
 }
 .story__content {
   width: 50%;
@@ -3440,6 +3483,9 @@ ul.crumbs span::before {
   .featured-bottom .featured-bottom__numbers {
     gap: 0;
   }
+  .modal-content {
+    width: auto;
+  }
 }
 @media (max-width: 500px) {
   .featured-bottom__number {
@@ -3529,5 +3575,8 @@ ul.crumbs span::before {
   }
   .slide__content {
     padding: 0 10px;
+  }
+  .modal button {
+    padding: 12px 25px;
   }
 }
