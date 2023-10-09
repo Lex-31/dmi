@@ -1213,7 +1213,7 @@ a {
   font-weight: 400;
 }
 
-.footer-title button, .person-info h5, .post__date, .post__next, .calc-bmi__btn, .program-icon, .button {
+.progress__list h4, .footer-title button, .person-info h5, .post__date, .post__next, .calc-bmi__btn, .program-icon, .button {
   font-family: "OpenSans-Medium", sans-serif;
   font-weight: 500;
 }
@@ -1223,12 +1223,12 @@ a {
   font-weight: 600;
 }
 
-.ready__content h6, .post__title, .card__title, .featured-bottom__number, .featured-right__title {
+.story__years span, .progress__card-white h3, .progress__card-transparent h3, .progress__card-white div, .progress__card-transparent div, .ready__content h6, .post__title, .card__title, .featured-bottom__number, .featured-right__title {
   font-family: "OpenSans-Bold", sans-serif;
   font-weight: 700;
 }
 
-.ready__content h2, .feedback__title, .blog__title, .calculator__title, .program__title h2, .benefit__title, .about-info h2, .featured-left__title {
+.cert__header h2, .story__content h2, .progress__header h2, .experience__content h2, .about-my__content h2, .ready__content h2, .feedback__title, .blog__title, .calculator__title, .program__title h2, .benefit__title, .about-info h2, .featured-left__title {
   font-family: "OpenSans-ExtraBold", sans-serif;
   font-weight: 800;
 }
@@ -2444,7 +2444,6 @@ body {
   text-transform: uppercase;
   font-size: 50px;
   line-height: 60px;
-  font-weight: 800;
   letter-spacing: 1.2px;
   margin-bottom: 40px;
 }
@@ -2462,24 +2461,24 @@ body {
   content: "";
   height: 290px;
   width: 840px;
-  background-color: #70b018;
+  background-color: var(--accent-color);
   position: absolute;
   bottom: -20px;
   left: 50px;
   z-index: -1;
 }
 .about-my__photo-one {
-  width: 380px;
+  width: 63%;
   margin-top: 40px;
   z-index: 1;
 }
 .about-my__photo-two {
   position: absolute;
   border: solid 20px #ffffff;
-  width: 190px;
+  width: 31%;
   z-index: 2;
   top: 0;
-  right: 90px;
+  left: 45%;
 }
 
 ul.crumbs {
@@ -2530,7 +2529,6 @@ ul.crumbs span::before {
   text-transform: uppercase;
   font-size: 34px;
   line-height: 44px;
-  font-weight: 800;
   letter-spacing: 1.2px;
   background-color: #ffffff;
   border: 35px solid #ffffff;
@@ -2562,7 +2560,6 @@ ul.crumbs span::before {
   text-transform: uppercase;
   font-size: 34px;
   line-height: 44px;
-  font-weight: 800;
   letter-spacing: 1.2px;
   margin-bottom: 30px;
 }
@@ -2575,14 +2572,13 @@ ul.crumbs span::before {
   font-size: 18px;
   line-height: 28px;
   margin-bottom: 20px;
-  font-weight: 500;
   padding-left: 30px;
   position: relative;
 }
 .progress__list h4::before {
   content: "";
   display: block;
-  background-color: #70b018;
+  background-color: var(--accent-color);
   width: 12px;
   height: 12px;
   border-bottom: solid 3px #000000;
@@ -2602,14 +2598,12 @@ ul.crumbs span::before {
 .progress__card-white div, .progress__card-transparent div {
   font-size: 50px;
   line-height: 60px;
-  font-weight: 700;
-  color: #70b018;
+  color: var(--accent-color);
   padding-right: 20px;
 }
 .progress__card-white h3, .progress__card-transparent h3 {
   font-size: 24px;
   line-height: 34px;
-  font-weight: 700;
   color: #4c4c4c;
 }
 .progress__card-transparent {
@@ -2638,7 +2632,6 @@ ul.crumbs span::before {
   text-transform: uppercase;
   font-size: 34px;
   line-height: 44px;
-  font-weight: 800;
   letter-spacing: 1.2px;
   margin-bottom: 30px;
 }
@@ -2657,15 +2650,14 @@ ul.crumbs span::before {
 }
 .story__years span {
   font-size: 36px;
-  font-weight: 700;
-  color: #70b018;
+  color: var(--accent-color);
   padding-right: 15px;
   position: relative;
 }
 .story__years span::before {
   content: "";
   position: absolute;
-  background-color: #70b018;
+  background-color: var(--accent-color);
   width: 25px;
   height: 25px;
   border: solid 5px #ffffff;
@@ -2676,7 +2668,7 @@ ul.crumbs span::before {
 .story__years span::after {
   content: "";
   position: absolute;
-  border-bottom: 1px solid #70b018;
+  border-bottom: 1px solid var(--accent-color);
   padding-right: 50px;
   left: -55px;
   top: 50%;
@@ -2705,7 +2697,6 @@ ul.crumbs span::before {
   text-transform: uppercase;
   font-size: 34px;
   line-height: 44px;
-  font-weight: 800;
   letter-spacing: 1.2px;
   margin-bottom: 30px;
 }
@@ -2721,6 +2712,9 @@ ul.crumbs span::before {
 
 .pop-up {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   z-index: 1;
   left: 0;
   top: 0;
@@ -2733,7 +2727,6 @@ ul.crumbs span::before {
 }
 
 .pop-up img {
-  margin: 0 auto;
   width: 80%;
 }
 
@@ -3154,6 +3147,20 @@ ul.crumbs span::before {
   .swiper-button-next {
     width: 16%;
   }
+  .about-my__photos::before {
+    height: 245px;
+  }
+  .progress {
+    flex-wrap: wrap;
+  }
+  .progress__header {
+    width: 80%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  .progress__column {
+    width: 50%;
+  }
 }
 @media (max-width: 1050px) {
   .featured__inner {
@@ -3214,18 +3221,40 @@ ul.crumbs span::before {
   .footer-menu__row-3 {
     grid-column: 1/3;
   }
+  .about-my__content h2 {
+    font-size: 42px;
+  }
+  .experience__inner {
+    flex-direction: column-reverse;
+  }
+  .experience__video {
+    width: auto;
+  }
+  .experience__content {
+    width: 80%;
+  }
+  .story__content {
+    padding: 0 25px;
+  }
+  .story__content > p {
+    width: auto;
+  }
+  .story__years {
+    width: auto;
+  }
 }
 @media (max-width: 900px) {
   .featured-left {
     margin-top: 70px;
     width: auto;
   }
-  .featured-left__title {
-    font-size: 34px;
-    line-height: 44px;
-  }
   .featured-left__girl {
     width: 400px;
+  }
+  .featured-left__title,
+  .about-my__content h2 {
+    font-size: 34px;
+    line-height: 44px;
   }
   .featured-right__quote {
     padding: 25px;
@@ -3321,6 +3350,55 @@ ul.crumbs span::before {
   .swiper-button-next {
     width: 7%;
   }
+  .about-my__inner {
+    flex-direction: column;
+  }
+  .about-my__content {
+    width: 80%;
+  }
+  .about-my__photos {
+    width: 80%;
+  }
+  .about-my__content p {
+    width: auto;
+  }
+  .about-my__photos::before {
+    width: 150%;
+    left: -20%;
+  }
+  .progress__column {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .progress__column:last-child {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .experience__content h2 {
+    background-color: transparent;
+    border: none;
+  }
+  .experience__content p {
+    margin-left: 0;
+  }
+  .experience__content a {
+    margin-left: 0;
+  }
+  .story__content {
+    width: 55%;
+  }
+  .story__photo {
+    width: 45%;
+  }
+  .cert__header, .cert__item {
+    width: 50%;
+  }
+  .pop-up {
+    width: 100%;
+  }
+  .pop-up img {
+    width: 95%;
+  }
 }
 @media (max-width: 740px) {
   .featured__inner {
@@ -3358,6 +3436,27 @@ ul.crumbs span::before {
   .swiper-button-prev,
   .swiper-button-next {
     width: 15%;
+  }
+  .about-my__photo-one {
+    width: 75%;
+  }
+  .about-my__photo-two {
+    width: 40%;
+    left: 60%;
+  }
+  .story__photo {
+    display: none;
+  }
+  .story__content {
+    width: 80%;
+    padding: 0 10px;
+    margin: 0 auto;
+  }
+  .story__years span::after {
+    display: none;
+  }
+  .story__years span::before {
+    left: -30px;
   }
 }
 @media (max-width: 680px) {
@@ -3427,6 +3526,18 @@ ul.crumbs span::before {
   .swiper-button-next {
     width: 5%;
     background-color: transparent;
+  }
+  .cert__inner {
+    justify-content: center;
+  }
+  .cert__header, .cert__item {
+    width: 80%;
+  }
+  .pop-up {
+    width: 100%;
+  }
+  .pop-up img {
+    width: 100%;
   }
 }
 @media (max-width: 680px) and (orientation: landscape) {
@@ -3503,6 +3614,20 @@ ul.crumbs span::before {
   .modal-content {
     width: auto;
   }
+  .progress__column {
+    width: 100%;
+    padding: 0;
+  }
+  .experience__video {
+    width: 100%;
+  }
+  .experience__video video {
+    height: auto;
+    width: 100%;
+  }
+  .featured-right__video-inner {
+    width: 100%;
+  }
 }
 @media (max-width: 500px) {
   .featured-bottom__number {
@@ -3542,11 +3667,43 @@ ul.crumbs span::before {
   .program__title h2,
   .calculator__title,
   .feedback__title,
-  .ready__content h2 {
+  .ready__content h2,
+  .about-my__content h2,
+  .experience__content h2,
+  .progress__header h2,
+  .story__content h2,
+  .cert__header h2 {
     font-size: 28px;
   }
   .program-centre img {
     max-width: none;
+  }
+  .about-my__photo-two {
+    border: solid 10px #ffffff;
+    top: 15px;
+  }
+  .about-my__photos::before {
+    height: 60%;
+  }
+  .about-my__content {
+    width: auto;
+  }
+  .experience__content,
+  .progress__header {
+    width: auto;
+  }
+  .progress__card-white,
+  .progress__card-transparent {
+    padding: 15px;
+  }
+  .story__content {
+    width: auto;
+  }
+  .story__years span {
+    display: block;
+  }
+  .cert__header {
+    width: 100%;
   }
 }
 @media (max-width: 400px) {
@@ -3595,5 +3752,18 @@ ul.crumbs span::before {
   }
   .modal button {
     padding: 12px 25px;
+  }
+  .progress__card-white,
+  .progress__card-transparent {
+    padding: 10px;
+  }
+  .progress__card-white div,
+  .progress__card-transparent div {
+    font-size: 35px;
+    padding-right: 15px;
+  }
+  .progress__card-white h3,
+  .progress__card-transparent h3 {
+    font-size: 20px;
   }
 }
