@@ -2693,6 +2693,7 @@ ul.crumbs span::before {
 }
 .cert__item {
   padding: 12px;
+  cursor: pointer;
 }
 .cert__header h2 {
   text-transform: uppercase;
